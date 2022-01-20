@@ -38,5 +38,5 @@ module.exports = {
   start: port => {
     if (!port) { throw new Error('Missing Port'); }
     app.listen(port, () => console.log(`Listening on ${port}`));
-  },
+  }, app,
 };
